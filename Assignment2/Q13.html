@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Header & Fixed Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #00e1ff;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #262726;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    main {
+      padding: 20px;
+      margin-bottom: 60px; 
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Sticky Header</h2>
+  </header>
+
+  <main>
+    <h3>Scroll down to see sticky and fixed behavior:</h3>
+    <p>Paragraph 1: Lorem ipsum dolor sit amet.</p>
+    <p>Paragraph 2: Consectetur adipiscing elit.</p>
+    <p>Paragraph 3: Integer nec odio. Praesent libero.</p>
+    <p>Paragraph 4: Sed cursus ante dapibus diam.</p>
+    <p>Paragraph 5: Sed nisi. Nulla quis sem at nibh.</p>
+    <p>Paragraph 6: Elementum imperdiet. Duis sagittis ipsum.</p>
+    <p>Paragraph 7: Praesent mauris. Fusce nec tellus sed augue.</p>
+    <p>Paragraph 8: Semper porta. Mauris massa.</p>
+    <p>Paragraph 9: Vestibulum lacinia arcu eget nulla.</p>
+    <p>Paragraph 10: Class aptent taciti sociosqu ad litora torquent.</p>
+  </main>
+
+  <footer>
+    <p>Fixed Footer &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
