@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Card Layout</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card Style */
+.card {
+    text-align: center;
+  background-color: rgb(81, 210, 224);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  height: 200px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    height: 220px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <h1 class="title">Responsive Card Grid</h1>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="Card Image">
+      <h3>Card Title 1</h3>
+      <p>This is the description for card 1.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="Card Image">
+      <h3>Card Title 2</h3>
+      <p>This is the description for card 2.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="Card Image">
+      <h3>Card Title 3</h3>
+      <p>This is the description for card 3.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="Card Image">
+      <h3>Card Title 4</h3>
+      <p>This is the description for card 4.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="Card Image">
+      <h3>Card Title 5</h3>
+      <p>This is the description for card 5.</p>
+    </div>
+  </div>
+
+</body>
+</html>
