@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+       header{
+        background-color: #42abd0;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+       }
+       header h1{
+        margin-bottom: 10px;
+       }
+
+       nav ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+       }
+       nav ul li {
+        margin: 0 15px;
+       }
+       nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+       }
+
+       main{
+        padding: 20px;
+        max-width: 960px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+       section{
+        margin-bottom: 30px;
+       }
+       h2{
+        color: #1d1c1c;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+       }
+       table{
+        
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+       }
+       table th,table td{
+       
+        border: 1px solid ;
+        padding: 8px;
+        text-align: left;
+       }
+       table th{
+        background-color: #2a2af6;
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home"></a>Home</li>
+                <li><a href="#About"></a>About</li>
+                <li><a href="#Projects"></a>Projects</li>
+                <li><a href="#Contacts"></a>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>This portfolio showcase my Projects and provide information about my background and contact details.</p>
+        </section>
+
+        <section>
+            <h2>About</h2>
+            <p>Hello! I'm a web developer passionate about building dyanamic and responsive websites. I enjoy user-friendly interface and working on challenging projects.</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Year</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project Alpha</td>
+                        <td>A web based tool for tracking project progress and managing tasks.</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio Sites</td>
+                        <td>A personal website showcasing my work and skills as a web developer.</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contacts</h2>
+            <form>
+                <label for="name">Full Name:</label><br />
+                <input type="text" name="name"><br /><br/>
+
+                <label for="email">Email Address:</label><br />
+                <input type="email" name="email"><br /><br />
+
+                <label for="message">Your Message:</label><br />
+                <textarea  name="message" name = "message"></textarea><br /><br />
+
+                 <button type="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
