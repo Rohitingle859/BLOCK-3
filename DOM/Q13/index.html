@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      border: 2px solid #333;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    input {
+      margin: 5px 0;
+      display: block;
+    }
+    button {
+      margin: 5px 5px 15px 0;
+      padding: 8px 12px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Interactive DOM Manipulation</h1>
+
+
+  <label>
+    Enter background color:
+    <input type="text" id="color-input" placeholder="e.g., lightblue or #f0f">
+  </label>
+
+  <label>
+    Enter new text:
+    <input type="text" id="text-input" placeholder="Type something...">
+  </label>
+
+  <button id="change-bg-btn">Change Background</button>
+  <button id="update-text-btn">Update Text</button>
+
+
+  <div id="box">This is the initial content.</div>
+</body>
+<script src="app.js"></script>
+</html>
