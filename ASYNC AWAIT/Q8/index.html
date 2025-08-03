@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #productContainer{
+            display: grid;
+            font-family: 'Courier New', Courier, monospace;
+            grid-template-columns: repeat(3 ,1fr);
+            gap: 10px;
+            border: 1px solid black ;
+           
+        }
+        #productContainer{
+            /* border: 1px solid black ; */
+            /* border-radius: 2px; */
+            text-align: center ;
+        }
+
+        img{
+            max-width: 100%;
+            height: 200px;
+            width: 400 px;
+            
+        }
+    </style>
+</head>
+<body>
+    <button  id="btn" onclick="fetchProducts()">fetch Products</button>
+    <div id="productContainer"></div=>
+</body>
+<script src="app.js"></script>
+</html>
