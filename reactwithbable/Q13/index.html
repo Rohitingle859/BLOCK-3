@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla DOM Demo</title>
+</head>
+<body>
+    <h2 id="title">Original Title</h2>
+    <button id="changetitle">Change Title</button>
+    <p><span id="DomCount">0</span></p>
+</body>
+</html>
+<script>
+    let DomUpdates = 0
+    document.getElementById("changetitle").addEventListener("click",()=>{
+        document.getElementById("title").innerText = "Title Changed";
+        DomUpdates++;
+        document.getElementById("DomCount").innerText= "domUpdates";
+    })
+</script>
